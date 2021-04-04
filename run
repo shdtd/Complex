@@ -1,0 +1,8 @@
+#!/usr/bin/env php
+<?php
+if ( count($argv) == 2 && $argv[1] == 'test' )
+	echo `./bin/phpunit tests`;
+elseif ( count($argv) == 2 && $argv[1] == 'example' )
+	include("examples/math.php");
+else
+	echo "Use 'run test' or 'run example' only\n";
